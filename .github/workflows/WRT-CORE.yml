@@ -157,6 +157,12 @@ jobs:
         run: |
           cd ./wrt/
 
+          # PassWall feeds
+          cat >> feeds.conf.default <<'EOF'
+          src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main
+          src-git passwall_luci https://github.com/Openwrt-Passwall/openwrt-passwall.git;main
+          EOF
+
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 

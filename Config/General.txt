@@ -6,15 +6,13 @@
 
 # ---------- 保留：主题 ----------
 CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-app-argon-config=y
 
 # ---------- 保留：插件 ----------
 CONFIG_PACKAGE_luci-app-autoreboot=y
 CONFIG_PACKAGE_luci-app-uhttpd=y
 CONFIG_PACKAGE_luci-app-router-role=y
 CONFIG_PACKAGE_luci-app-fullconenat-sonic=y
-
-# ---------- 移除：argon 独立配置包（配置界面已内置在主题 v3.0.0）----------
-CONFIG_PACKAGE_luci-app-argon-config=n
 
 # ---------- 移除：多余主题 ----------
 CONFIG_PACKAGE_luci-theme-aurora=n
